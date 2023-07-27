@@ -1,0 +1,74 @@
+{% extends 'main.html' %}
+{% block content %}
+<style>
+body {
+    font-family: Cambria;
+    height: 100%;
+    background-image: linear-gradient(#4e0374, #c37ee6);
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+</style>
+    <div class="row"  style="margin-bottom: 477px;">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            {% if pred == 1 %}
+                <div class="card card-body alert alert-danger"><center>POSITIVE. The patient might have the disease.</center>
+                    <div class="row">
+                        <div class="col-md-12 card card-body" style="box-shadow: 0 0 5px black; margin: 5px; background-color: #daa8f4">
+                            
+                            <h5>Symptoms</h5>
+                            <ul>
+                                <h5 style="color: black;font-weight: bold;">Avoid risky behavior</h5>
+                                <li style="color: rgb(39, 43, 110);"> Use a condom during sex. If you choose to have tattoos or body piercings, be picky about cleanliness and safety when selecting a shop. Seek help if you use illicit intravenous drugs, and don't share needles to inject drugs.</li>
+                                <h5 style="color: black;font-weight: bold;">Get vaccinated</h5>
+                                <li style="color: rgb(39, 43, 110);">If you're at increased risk of contracting hepatitis or if you've already been infected with any form of the hepatitis virus, talk to your doctor about getting the hepatitis A and hepatitis B vaccines.</li>
+                                <h5 style="color: black;font-weight: bold;">Use medications wisely</h5>
+                                <li style="color: rgb(39, 43, 110);">Take prescription and nonprescription drugs only when needed and only in recommended doses. Don't mix medications and alcohol. Talk to your doctor before mixing herbal supplements or prescription or nonprescription drugs.</li>
+                                <h5 style="color: black;font-weight: bold;">Avoid contact with other people's blood and body fluids</h5>
+                                <li style="color: rgb(39, 43, 110);">Hepatitis viruses can be spread by accidental needle sticks or improper cleanup of blood or body fluids.</li>
+                                <h5 style="color: black;font-weight: bold;">Keep your food safe</h5>
+                                <li style="color: rgb(39, 43, 110);">Wash your hands thoroughly before eating or preparing foods. If traveling in a developing country, use bottled water to drink, wash your hands and brush your teeth.q</li>
+                                <h5 style="color: black;font-weight: bold;">Take care with aerosol sprays</h5>
+                                <li style="color: rgb(39, 43, 110);">Make sure to use these products in a well-ventilated area, and wear a mask when spraying insecticides, fungicides, paint and other toxic chemicals. Always follow the manufacturer's instructions.</li>
+                                <h5 style="color: black;font-weight: bold;">Protect your skin</h5>
+                                <li style="color: rgb(39, 43, 110);">When using insecticides and other toxic chemicals, wear gloves, long sleeves, a hat and a mask so that chemicals aren't absorbed through your skin.</li>
+                                <h5 style="color: black;font-weight: bold;">Maintain a healthy weight</h5>
+                                <li style="color: rgb(39, 43, 110);">Obesity can cause nonalcoholic fatty liver disease</li>
+                            </ul>
+                        </div>
+                    </div></div>
+            {% else %}
+                <div class="card card-body alert alert-success"><center>NEGATIVE. The patient is healthy.</center>
+                    <div class="row">
+                        <div class="col-md-12 card card-body" style="box-shadow: 0 0 5px black; margin: 5px; background-color: #daa8f4">
+                            
+                            <h5>Best foods to eat for your Good health</h5>
+                            <ul>
+                                <h5 style="color: black;font-weight: bold;">Coffee</h5>
+                                <li style="color: rgb(39, 43, 110);"> Coffee is one of the best beverages you can drink to promote liver health.Studies have shown that drinking coffee protects the liver from disease, even among those who already have problems with this organ.</li>
+                                <h5 style="color: black;font-weight: bold;"> Tea</h5>
+                                <li style="color: rgb(39, 43, 110);">Tea is widely considered to be beneficial for health, but evidence has shown that it may have particular benefits for the liver.</li>
+                                <h5 style="color: black;font-weight: bold;">Grapefruit</h5>
+                                <li style="color: rgb(39, 43, 110);">Grapefruit contains antioxidants that naturally protect the liver. The two main antioxidants found in grapefruit are naringenin and naringin.</li>
+                                <h5 style="color: black;font-weight: bold;">Blueberries and cranberries</h5>
+                                <li style="color: rgb(39, 43, 110);">Blueberries and cranberries contain anthocyanins, antioxidants that give berries their distinctive colors. They’ve also been linked to many health benefits.</li>
+                                <h5 style="color: black;font-weight: bold;">Prickly pear</h5>
+                                <li style="color: rgb(39, 43, 110);">Prickly pear, known scientifically as Opuntia ficus-indica, is a popular type of edible cactus. Its fruit and juice are most commonly consumed.</li>
+                                <h5 style="color: black;font-weight: bold;">Beetroot juice</h5>
+                                <li style="color: rgb(39, 43, 110);">Beetroot juice is a source of nitrates and antioxidants called betalains, which may benefit heart health and reduce oxidative damage and inflammation</li>
+                                <h5 style="color: black;font-weight: bold;">Cruciferous vegetables</h5>
+                                <li style="color: rgb(39, 43, 110);">Cruciferous vegetables are known for their high fiber content and distinctive taste. They’re also rich in beneficial plant compounds.</li>
+                                <h5 style="color: black;font-weight: bold;">Nuts</h5>
+                                <li style="color: rgb(39, 43, 110);">Nuts are rich in several key nutrients</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+            
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+{% endblock %}
